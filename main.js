@@ -1,9 +1,7 @@
 'use strict'
+const btnsend = document.querySelector('#btnsend');
+const lblTexto = document.querySelector('#lblsend');
 
-const btn = document.getElementById('saludar');
-
-btn.addEventListener("click",()=>{   
-    alert('hi buddy');
+btnsend.addEventListener("click",()=>{ 
+    alert(`hi ${lblTexto.value}`);
 });
-
-
